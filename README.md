@@ -1,6 +1,6 @@
 # Code Grasp
 
-A CLI tool that uses embedding models to analyze code, query knowledge, and understand code repositories.
+A CLI tool that uses the [Qodo-Embed-1-1.5B](https://huggingface.co/Qodo/Qodo-Embed-1-1.5B) embedding model to analyze code, query knowledge, and understand code repositories.
 > **⚠️ ALPHA RELEASE**: This tool is currently in alpha status and not production-ready. Use at your own risk.
 
 ## Features
