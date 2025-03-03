@@ -210,7 +210,7 @@ def run_demo():
         subprocess.run(["code_grasp", "ask", "--lightweight", "How is password hashing implemented?"], check=True)
         
         print("\n4. Analyzing the project directly")
-        subprocess.run(["code_grasp", "ask_dir", "--lightweight", project_dir, "What REST API endpoints are available?"], check=True)
+        subprocess.run(["code_grasp", "ask-dir", "--lightweight", project_dir, "What REST API endpoints are available?"], check=True)
         
         print("\n5. Getting information about the database")
         subprocess.run(["code_grasp", "info"], check=True)

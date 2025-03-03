@@ -118,7 +118,7 @@ def add(directory, lightweight, batch_size):
     except Exception as e:
         click.echo(f"Error: {e}")
 
-@cli.command()
+@cli.command(name="ask-dir")
 @click.argument("directory", type=click.Path(exists=True))
 @click.argument("question")
 @click.option("--lightweight", is_flag=True, help="Force using the lightweight model")

@@ -62,10 +62,10 @@ pip install -e .
 3. **Ask About a Directory**:
    ```bash
    # Standard mode
-   code_grasp ask_dir /path/to/code/dir "What functions handle authentication?"
+   code_grasp ask-dir /path/to/code/dir "What functions handle authentication?"
    
    # Lightweight mode with smaller batch size
-   code_grasp ask_dir --lightweight --batch-size 2 /path/to/code/dir "What functions handle authentication?"
+   code_grasp ask-dir --lightweight --batch-size 2 /path/to/code/dir "What functions handle authentication?"
    ```
 
 4. **Display Information**:

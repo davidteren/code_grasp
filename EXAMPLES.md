@@ -36,13 +36,13 @@ code_grasp ask "How to implement the observer pattern?"
 
 ```bash
 # Ask about a directory's code without adding it to the database
-code_grasp ask_dir ~/projects/my-app/src "How is authentication handled?"
+code_grasp ask-dir ~/projects/my-app/src "How is authentication handled?"
 
 # Analyze using lightweight mode
-code_grasp ask_dir --lightweight ~/projects/web-app "What API endpoints are implemented?"
+code_grasp ask-dir --lightweight ~/projects/web-app "What API endpoints are implemented?"
 
 # Focus on a specific subdirectory
-code_grasp ask_dir ~/projects/app/controllers "How is error handling implemented?"
+code_grasp ask-dir ~/projects/app/controllers "How is error handling implemented?"
 ```
 
 ### Getting Information About the Database
