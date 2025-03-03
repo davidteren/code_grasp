@@ -3,6 +3,7 @@ import click
 import faiss
 import numpy as np
 import gc
+import torch
 from .embedder import Embedder
 from .db import CodeDB
 

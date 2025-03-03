@@ -30,7 +30,7 @@ source venv/bin/activate
 
 # Install core dependencies first
 pip install torch
-pip install click transformers faiss-cpu numpy
+pip install click transformers faiss-cpu numpy accelerate
 
 # Install package locally
 pip install -e .

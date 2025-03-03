@@ -183,8 +183,21 @@ def run_demo():
     """Run the demo script."""
     print("=== Code Grasp Demo ===")
     print("This demo will create a temporary project and showcase Code Grasp capabilities.")
-    print("Creating demo project...")
     
+    # Clear existing database files if they exist
+    import os
+    import shutil
+    
+    db_files = ["code_grasp.db", "code_grasp.faiss"]
+    for file in db_files:
+        if os.path.exists(file):
+            try:
+                os.remove(file)
+                print(f"Removed existing database file: {file}")
+            except Exception as e:
+                print(f"Could not remove {file}: {e}")
+    
+    print("Creating demo project...")
     project_dir = create_demo_project()
     print(f"Created demo project at: {project_dir}")
     

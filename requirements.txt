@@ -6,6 +6,7 @@ click>=8.1.0
 torch>=2.0.0
 transformers>=4.39.2
 faiss-cpu>=1.7.4
+accelerate>=0.26.0
 
 # Optional - might not work on all systems
 # flash_attn>=2.5.6

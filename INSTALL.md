@@ -43,6 +43,8 @@ For detailed PyTorch installation instructions based on your hardware, see: http
 ### 4. Install other dependencies and the package
 ```bash
 pip install -r requirements.txt
+# Or manually install the core dependencies
+pip install accelerate numpy click transformers faiss-cpu
 pip install -e .
 ```
 
