@@ -1,0 +1,34 @@
+# Changelog
+
+## 0.1.0-alpha (2025-03-04)
+
+> **⚠️ ALPHA RELEASE**: This tool is currently in alpha status and not production-ready. Use at your own risk.
+
+Initial alpha release of Code Grasp.
+
+### Features
+- Integration with Qodo-Embed-1-1.5B embedding model
+- Fallback to lightweight model (sentence-transformers/all-MiniLM-L6-v2)
+- CLI commands for adding, querying, and analyzing code
+- Support for multiple programming languages
+- Memory-efficient processing options
+- Automatic hardware acceleration detection (CUDA, MPS)
+
+### Known Issues
+- May experience segmentation faults with large codebases on memory-constrained systems
+- Limited error handling for edge cases
+- Performance optimizations needed for very large repositories
+- Documentation is preliminary
+
+### Hardware Requirements
+- Minimum: 8GB RAM, modern CPU
+- Recommended: 16GB RAM, GPU with 4GB+ VRAM
+- For large codebases: 32GB RAM, GPU with 8GB+ VRAM
+
+### Next Steps
+- Improved memory efficiency
+- Better error handling
+- Additional language support
+- Integration with code search tools
+- Support for analyzing code snippets
+- Distributed processing for very large codebases

@@ -1,0 +1,11 @@
+# Core dependencies
+numpy>=1.24.0
+click>=8.1.0
+
+# ML dependencies in proper order
+torch>=2.0.0
+transformers>=4.39.2
+faiss-cpu>=1.7.4
+
+# Optional - might not work on all systems
+# flash_attn>=2.5.6
