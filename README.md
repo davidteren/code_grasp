@@ -2,6 +2,8 @@
 
 A CLI tool that uses embedding models to analyze code, query knowledge, and understand code repositories.
 
+> **⚠️ DEVELOPMENT BRANCH**: This is the development branch of Code Grasp. For the stable version, please use the main branch.
+
 > **⚠️ ALPHA RELEASE**: This tool is currently in alpha status and not production-ready. Use at your own risk.
 
 ## Features
@@ -9,6 +11,15 @@ A CLI tool that uses embedding models to analyze code, query knowledge, and unde
 2. **Query Current Knowledge**: Ask questions about embedded code or general info the model knows
 3. **Directory Analysis**: Provide a directory, embed all code files, and ask questions about them
 4. **Memory-Efficient Processing**: Options to control memory usage for different hardware profiles
+
+## Development Status
+
+This development branch contains work-in-progress features that are not yet ready for release. Current development focuses on:
+
+- Improving memory management
+- Adding support for more programming languages
+- Enhancing query capabilities
+- Optimizing performance on different hardware platforms
 
 ## Installation
 
@@ -164,6 +175,10 @@ If you encounter problems installing dependencies:
 2. On Windows, you may need Microsoft Visual C++ Build Tools
 3. For CUDA support, ensure you have compatible CUDA drivers installed
 4. For Apple Silicon, ensure you have Xcode command-line tools installed
+
+## Contributing
+
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.
 
 ## License
 
