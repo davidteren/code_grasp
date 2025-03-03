@@ -1,9 +1,6 @@
 # Code Grasp
 
 A CLI tool that uses embedding models to analyze code, query knowledge, and understand code repositories.
-
-> **⚠️ DEVELOPMENT BRANCH**: This is the development branch of Code Grasp. For the stable version, please use the main branch.
-
 > **⚠️ ALPHA RELEASE**: This tool is currently in alpha status and not production-ready. Use at your own risk.
 
 ## Features
@@ -180,6 +177,18 @@ If you encounter problems installing dependencies:
 
 Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.
 
-## License
+## Licensing
 
-MIT License
+This project uses a dual licensing model:
+
+1. **Code Grasp Code**: The Code Grasp tool itself is licensed under the **MIT License**, allowing for free use, modification, and distribution.
+
+2. **Qodo-Embed-1-1.5B Model**: The embedding model used by this tool (Qodo-Embed-1-1.5B) is licensed under the **Qodo Open RAIL++-M License**, which:
+   - Allows commercial and non-commercial use
+   - Includes use-based restrictions to prevent harmful applications
+   - Requires derivatives to retain these restrictions
+   - Was released by QodoAI on February 19, 2025
+
+When using Code Grasp, you must comply with both licenses - MIT for the code and Qodo Open RAIL++-M for the model. If you redistribute or create derivative works, you must include both license terms.
+
+For the full Qodo Open RAIL++-M License text, please refer to [QodoAI's official website](https://www.qodo.ai/open-rail-m-license/).

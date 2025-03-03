@@ -164,6 +164,15 @@ code_grasp info
 
 This should show information about the available models and system configuration.
 
+## License Considerations
+
+Please note that while Code Grasp itself is under the MIT License, it uses the Qodo-Embed-1-1.5B model which is licensed under the Qodo Open RAIL++-M License. This dual licensing requires:
+
+1. Compliance with MIT License for the Code Grasp code
+2. Compliance with Qodo Open RAIL++-M License for the embedded model
+
+The Qodo license permits commercial use but includes ethical restrictions on harmful applications. Please review both licenses before using Code Grasp in production or redistributing it.
+
 ## Troubleshooting Installation Issues
 
 ### Common Issues

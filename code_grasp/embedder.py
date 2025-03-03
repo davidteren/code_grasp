@@ -19,6 +19,8 @@ class Embedder:
             try:
                 print("Attempting to load Qodo-Embed-1-1.5B model...")
                 # Try to load the Qodo model with minimal memory footprint
+                # Note: This model is licensed under the Qodo Open RAIL++-M License
+                # See LICENSE_INFO.md for details
                 self.tokenizer = AutoTokenizer.from_pretrained(
                     "Qodo/Qodo-Embed-1-1.5B", 
                     trust_remote_code=True,
