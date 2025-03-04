@@ -68,6 +68,9 @@ pip install -e .
 4. **Display Information**:
    ```bash
    code_grasp info
+   
+   # Lightweight mode (recommended for Apple Silicon)
+   code_grasp info --lightweight
    ```
 
 ## Hardware Optimization Guide

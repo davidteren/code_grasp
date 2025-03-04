@@ -216,11 +216,18 @@ def ask_dir(directory, question, lightweight, batch_size):
         click.echo(f"Error: {e}")
 
 @cli.command()
-def info():
+@click.option("--lightweight", is_flag=True, help="Force using the lightweight model")
+def info(lightweight=False):
     """Display information about the stored embeddings."""
     try:
-        # First, check if the embedder can load
-        embedder = get_embedder(False)  # Try the full model first
+        # For M1/M2 Macs, use lightweight model by default to avoid segmentation faults
+        if torch.backends.mps.is_available() and not lightweight:
+            click.echo("Using lightweight model on Apple Silicon to avoid stability issues")
+            lightweight = True
+            
+        # Load the embedder with appropriate settings
+        embedder = get_embedder(lightweight)
+        
         if embedder.is_fallback:
             model_name = "Sentence-Transformers (lightweight)"
         else:

@@ -15,10 +15,12 @@ Initial alpha release of Code Grasp.
 - Automatic hardware acceleration detection (CUDA, MPS)
 
 ### Known Issues
-- May experience segmentation faults with large codebases on memory-constrained systems
 - Limited error handling for edge cases
 - Performance optimizations needed for very large repositories
 - Documentation is preliminary
+
+### Fixed Issues
+- Fixed segmentation fault in `code_grasp info` command on M1/M2 Macs by defaulting to lightweight model
 
 ### Hardware Requirements
 - Minimum: 8GB RAM, modern CPU
