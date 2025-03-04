@@ -68,6 +68,9 @@ pip install -e .
 4. **Display Information**:
    ```bash
    code_grasp info
+   
+   # Lightweight mode (recommended for Apple Silicon)
+   code_grasp info --lightweight
    ```
 
 ## Hardware Optimization Guide
@@ -90,8 +93,9 @@ pip install -e .
 
 ### Apple Silicon (M1/M2/M3)
 - MPS acceleration is used automatically for improved performance
-- 8GB RAM models: Use `--lightweight` mode for larger codebases
-- 16GB+ RAM models: Standard mode should work well with default settings
+- The `info` command automatically uses lightweight mode on Apple Silicon to prevent segmentation faults
+- 8GB RAM models: Use `--lightweight` mode for all commands with larger codebases
+- 16GB+ RAM models: Standard mode should work well with default settings for most commands
 - For optimal performance on 8GB models, use `--batch-size 2` with `--lightweight`
 
 ### NVIDIA GPU Systems
@@ -153,10 +157,12 @@ Code Grasp offers several memory optimization features:
 ### Segmentation Faults
 If you experience segmentation faults, try these solutions:
 
-1. Use lightweight mode: `code_grasp --lightweight ...`
+1. Use lightweight mode: `code_grasp --lightweight ...` (particularly important for the `info` command on Apple Silicon)
 2. Reduce batch size: `code_grasp --batch-size 1 ...`
 3. Process smaller directories at a time
 4. Ensure you have at least 8GB of free RAM
+
+**Note:** The `info` command now automatically uses lightweight mode on Apple Silicon to prevent segmentation faults.
 
 ### Performance Issues
 For better performance:
