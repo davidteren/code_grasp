@@ -3,6 +3,10 @@
 A CLI tool that uses the [Qodo-Embed-1-1.5B](https://huggingface.co/Qodo/Qodo-Embed-1-1.5B) embedding model to analyze code, query knowledge, and understand code repositories.
 > **⚠️ ALPHA RELEASE**: This tool is currently in alpha status and not production-ready. Use at your own risk.
 
+## Project Status
+
+**⚠️ HARDWARE LIMITATIONS**: This project is currently on hold due to hardware constraints. Effective code embedding and search at scale requires significant computational resources (enterprise-grade GPUs) that are not typically available on consumer hardware. For more information, see our [analysis document](docs/context/code_grasp_analysis.md) and the [Nvidia article on Qodo's implementation](https://developer.nvidia.com/blog/spotlight-qodo-innovates-efficient-code-search-with-nvidia-dgx/).
+
 ## Features
 1. **Code Embedding**: Generate embeddings for code files using pre-trained models
 2. **Query Current Knowledge**: Ask questions about embedded code or general info the model knows
@@ -39,10 +43,10 @@ pip install -e .
    ```bash
    # Standard mode (will try to use Qodo-Embed-1-1.5B if possible)
    code_grasp add /path/to/code/dir
-   
+
    # Lightweight mode (good for memory-constrained systems)
    code_grasp add --lightweight /path/to/code/dir
-   
+
    # Control batch size for better memory management
    code_grasp add --batch-size 2 /path/to/code/dir
    ```
@@ -51,7 +55,7 @@ pip install -e .
    ```bash
    # Standard mode
    code_grasp ask "How do I implement a binary search?"
-   
+
    # Lightweight mode
    code_grasp ask --lightweight "How do I implement a binary search?"
    ```
@@ -60,7 +64,7 @@ pip install -e .
    ```bash
    # Standard mode
    code_grasp ask-dir /path/to/code/dir "What functions handle authentication?"
-   
+
    # Lightweight mode with smaller batch size
    code_grasp ask-dir --lightweight --batch-size 2 /path/to/code/dir "What functions handle authentication?"
    ```
@@ -68,7 +72,7 @@ pip install -e .
 4. **Display Information**:
    ```bash
    code_grasp info
-   
+
    # Lightweight mode (recommended for Apple Silicon)
    code_grasp info --lightweight
    ```

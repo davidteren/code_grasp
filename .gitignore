@@ -104,3 +104,4 @@ coverage.xml
 # Environment variables
 .env
 .envrc
+.qodo
